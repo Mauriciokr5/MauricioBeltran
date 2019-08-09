@@ -1,0 +1,116 @@
+.grids {
+    width: 100%;
+    height: 250px;
+    display: grid;
+    grid-template-columns: repeat(15, 1fr);
+    grid-row-gap: 10px;
+}
+
+.backgrid {
+    background-color: var(--colorFondo);
+    padding: 10%;
+}
+
+.cuadro1 {
+    position: relative;
+    height: 250px;
+    grid-column: 3/6;
+}
+
+.cuadro2 {
+    position: relative;
+    height: 250px;
+    grid-column: 7/10;
+}
+
+.cuadro3 {
+    position: relative;
+    height: 250px;
+    grid-column: 11/14;
+}
+
+.cuadro {
+    display: block;
+    text-decoration: none;
+    border: 2px solid transparent;
+    padding: 10px;
+    transition: all 0.3s ease-out;
+    color: black;
+    text-align: center;
+    min-width: 180px;
+}
+
+.cuadro:hover {
+    border-color: #35373e;
+}
+
+@media screen and (max-width:1024px) {
+    .cuadro {
+        grid-column: 3/14;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+    .backgrid {
+        height: 1000px;
+    }
+}
+
+.titPorta {
+    font-family: 'Poppins', sans-serif;
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.titproy {
+    font-size: 20px;
+}
+
+.git {
+    height: 20vh;
+    position: relative;
+    background-color: #b2d3be;
+    padding: 5%;
+}
+
+.git a {
+    position: absolute;
+    text-decoration: none;
+    font-size: 25px;
+    color: #b2d3be;
+    border: solid 2px;
+    padding: 10px 20px;
+    width: 290px;
+    height: 60px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    text-align: center;
+    transition: all .3s;
+    border-radius: 50px;
+    background-color: #89a3b2;
+}
+
+.git a:hover {
+    border: solid 2px;
+    transition: all .3s;
+    background-color: var(--colorFondo);
+}
+
+.imgs {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 6px 6px 6px 6px;
+}
+
+.alv {
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}

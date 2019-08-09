@@ -1,0 +1,90 @@
+:root {
+    --colorFondo: #fff;
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.fondo {
+    background-color: var(--colorFondo);
+    /* background-image: url("https://i2.wp.com/www.andro-life.com/wp-content/uploads/2017/08/Wallpaper-5.png?ssl=1");
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative; */
+}
+
+.fondo img {
+    object-fit: cover;
+}
+
+.inicio {
+    height: 85vh;
+    display: block;
+    position: relative;
+    /* background-color: white; */
+    /* background-size: cover;*/
+}
+
+.logoInicio {
+    max-width: 800px;
+    width: 80vw;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    animation: 2s ease-in 0s 1 logoAnimation;
+}
+
+@keyframes logoAnimation {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.flecha {
+    text-align: center;
+    height: 15vh;
+    font-size: 50px;
+    animation: 2s ease-in 0s 1 logoAnimation;
+}
+
+.flecha a {
+    position: absolute;
+    text-decoration: none;
+    color: black;
+    animation: movFlecha .8s infinite alternate;
+    /* animation: movFlecha2 1s ease; */
+}
+
+@keyframes movFlecha {
+    from {}
+    to {
+        transform: translate(0, 15px);
+    }
+}
+
+@keyframes movFlecha2 {
+    from {
+        transform: translate(0, 15px);
+    }
+    to {}
+}
+
+@media screen and (max-width:1024px) {
+    .flecha {
+        font-size: 40px;
+    }
+}

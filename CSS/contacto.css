@@ -1,0 +1,104 @@
+.contacto {
+    position: relative;
+    height: 80vh;
+    background-color: white;
+    display: block;
+}
+
+.contactoContenedor {
+    width: 80%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 10vh;
+}
+
+.contactoTexto {
+    padding: 5%;
+    padding-left: 10%;
+    background-color: transparent;
+}
+
+.contactoForm {
+    background-color: transparent;
+}
+
+.inp {
+    display: block;
+    margin: 5% 0;
+    width: 100%;
+    background: transparent;
+    border: 0;
+    border-bottom: solid 1px black;
+    color: black;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.inp:focus {
+    outline: none;
+}
+
+.boton {
+    background-color: #ffd62b;
+    border: 0;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.contaF {
+    margin-left: 10%;
+    color: black;
+}
+
+.tellme {
+    margin-top: 10%;
+    font-size: 35px;
+    margin-left: 10%;
+    margin-bottom: 5%;
+}
+
+.say {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.info {
+    font-size: 110%;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width:1024px) {
+    .contacto {
+        height: 150vh;
+    }
+    .contactoContenedor {
+        grid-template-columns: 1fr;
+    }
+    .contactoForm {
+        padding-right: 3%;
+        display: block;
+    }
+    .contaF {
+        margin-left: 3%;
+    }
+    .tellme {
+        text-align: center;
+        margin-left: 0;
+    }
+}
+
+.correo a {
+    text-decoration: none;
+}
+
+.refCont {
+    margin-top: -5%;
+}

@@ -1,0 +1,74 @@
+.sobreMi {
+    height: 60vh;
+    background-color: #ffd62b;
+    position: relative;
+}
+
+.txtSobre {
+    height: 40vh;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    margin-left: 20%;
+    margin-right: 40%;
+}
+
+.sobreMiP1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+}
+
+@media screen and (max-width:1140px) {
+    .sobreMi {
+        height: 50vh;
+    }
+    .txtSobre {
+        margin-left: 5%;
+        margin-right: 5%;
+        height: 28vh;
+    }
+}
+
+@media screen and (max-width:970px) {
+    .sobreMi {
+        height: 50vh;
+    }
+    .txtSobre {
+        margin-left: 5%;
+        margin-right: 5%;
+        height: 28vh;
+    }
+}
+
+@media screen and (max-width:725px) {
+    .sobreMi {
+        height: 40vh;
+    }
+    .txtSobre {
+        margin-left: 5%;
+        margin-right: 5%;
+        height: 30vh;
+    }
+    .sobreMiP1 {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width:525px) {
+    .sobreMi {
+        height: 50vh;
+    }
+    .txtSobre {
+        margin-left: 5%;
+        margin-right: 6%;
+        height: 36vh;
+    }
+    .sobreMiP1 {
+        font-size: 18px;
+    }
+}
+
+.refSobre {
+    margin-top: -10%;
+}
